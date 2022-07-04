@@ -1,0 +1,16 @@
+﻿{
+  "profiles": {
+    "change keep backup": {
+      "commandName": "Project",
+      "commandLineArgs": "change \"E:\\Games\\Alien- Isolation\\Content\\data\\UI\\Movies\" -s=1 -d=0 -t=4"
+    },
+    "change do not keep backup": {
+      "commandName": "Project",
+      "commandLineArgs": "change \"E:\\Games\\Alien- Isolation\\Content\\data\\UI\\Movies\" -s=1 -d=0 --no-backup -t=4"
+    },
+    "restore backup": {
+      "commandName": "Project",
+      "commandLineArgs": "restore \"E:\\Games\\Alien- Isolation\\Content\\data\\UI\\Movies\""
+    }
+  }
+}
