@@ -47,10 +47,11 @@ namespace AI_Cutscenes_Language_Changer
             if (!Directory.Exists(backupPath))
             {
                 Directory.CreateDirectory(backupPath);
-                foreach (var file in Directory.GetFiles(InputPath, "*.usm").Where(file => fileList.Contains(Path.GetFileNameWithoutExtension(file))))
-                {
+            }
+            foreach (var file in Directory.GetFiles(InputPath, "*.usm").Where(file => fileList.Contains(Path.GetFileNameWithoutExtension(file))))
+            {
+                if (!File.Exists(Path.Combine(backupPath, Path.GetFileName(file))))
                     File.Move(file, Path.Combine(backupPath, Path.GetFileName(file)), true);
-                }
             }
             var tempPath = Path.Combine(InputPath, "temp");
             if (!Directory.Exists(tempPath))
@@ -120,7 +121,8 @@ namespace AI_Cutscenes_Language_Changer
             {
                 File.Move(file, Path.Combine(InputPath, Path.GetFileName(file)), true);
             }
-            Directory.Delete(backupPath);
+            if (Directory.GetFiles(backupPath).Length == 0)
+                Directory.Delete(backupPath);
 
             return 0;
         }
