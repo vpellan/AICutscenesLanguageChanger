@@ -2,6 +2,8 @@
 
 Tool that changes the language of Alien Isolation cutscenes by demuxing and remuxing .usm files.
 
+Also check [AIAudioLanguageConverter](https://github.com/JeanBombeur45/AIAudioLanguageConverter)
+
 ## Getting started
 
 Download and put Scaleform Video Encoder binaries in a folder named `ScaleformVideoEncoder` created at the same path as `AI_Cutscenes_Language_Changer` executable (Make sure that medianoche.exe and all of its dependency are in the `ScaleformVideoEncoder` folder). 
