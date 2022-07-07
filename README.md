@@ -2,7 +2,7 @@
 
 Tool that changes the language of Alien Isolation cutscenes by demuxing and remuxing .usm files.
 
-Also check [AIAudioLanguageConverter](https://github.com/JeanBombeur45/AIAudioLanguageConverter)
+Also check [AIAudioLanguageConverter](https://github.com/JeanBombeur45/AIAudioLanguageConverter) for audio-only dialogues .pck files.
 
 ## Getting started
 
@@ -53,4 +53,4 @@ AI_Cutscenes_Language_Changer change <InputPath> [options]
 
 ## License
 
-UsmToolkit follows the MIT License. It uses code from [VGMToolbox](https://sourceforge.net/projects/vgmtoolbox/).
+AI_Cutscenes_Language_Changer follows the MIT License. It uses code from [VGMToolbox](https://sourceforge.net/projects/vgmtoolbox/) and [USMToolkit](https://github.com/JeanBombeur45/UsmToolkit). Releases also includes [ffmpeg](https://ffmpeg.org/) and [VGMStream](https://github.com/vgmstream/vgmstream)
